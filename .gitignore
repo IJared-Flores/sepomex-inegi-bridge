@@ -1,0 +1,28 @@
+# Entornos virtuales
+.venv/
+venv/
+ENV/
+
+# Caching de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Bases de datos SQLite generadas
+*.db
+*.sqlite3
+
+# Archivos pesados de insumos de Excel (SEPOMEX / INEGI)
+*.xls
+*.xlsx
+*.csv
+
+# Entornos y variables de configuración sensible
+.env
+.env.local
+
+# Archivos de SO y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
