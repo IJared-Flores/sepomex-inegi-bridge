@@ -72,7 +72,7 @@ Run the pipeline to process raw catalogs and generate the optimized SQLite datab
 python process_catalogs.py
 python build_database.py
 
-
+---
 🚀 Running the API
 ---
 Start the FastAPI development server using Uvicorn:
@@ -83,17 +83,18 @@ Once running, you can access:
 Interactive API Docs (Swagger UI): http://localhost:8000/docs
 Alternative Docs (ReDoc): http://localhost:8000/redoc
 
-
+---
 🐳 Running with Docker 
 ---
 You can easily build and run the service inside a Docker container:
 
-# Build the Docker image
+Build the Docker image
 docker build -t sepomex-inegi-api .
 
-# Run the container
+Run the container
 docker run -d -p 8000:8000 --name geo-api sepomex-inegi-api
 
+---
 📄 License
 ---
 Distributed under the terms of the License file included in this repository.
