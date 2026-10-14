@@ -50,7 +50,7 @@ The raw data processed by the pipeline originates from official Mexican governme
    * Download the Marco Geoestadístico and locality catalogs from the [Correos de México / SEPOMEX Portal](http://www.dgis.salud.gob.mx/contenidos/intercambio/localidades_gobmx.html).
    * Ensure the locality files match the expected format for the SQLite ingestion script (`build_database.py`).
 
-##⚙️ Installation & Setup
+⚙️ Installation & Setup
 ---
 1. Clone the Repository
 
@@ -73,7 +73,7 @@ python process_catalogs.py
 python build_database.py
 
 
-##🚀 Running the API
+🚀 Running the API
 ---
 Start the FastAPI development server using Uvicorn:
 
