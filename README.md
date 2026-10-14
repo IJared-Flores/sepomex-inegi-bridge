@@ -51,7 +51,7 @@ The raw data processed by the pipeline originates from official Mexican governme
    * Ensure the locality files match the expected format for the SQLite ingestion script (`build_database.py`).
 
 ##⚙️ Installation & Setup
-
+---
 1. Clone the Repository
 
 git clone [https://github.com/your-username/sepomex-inegi-bridge.git](https://github.com/your-username/sepomex-inegi-bridge.git)
@@ -71,9 +71,10 @@ pip install -r requirements.txt
 Run the pipeline to process raw catalogs and generate the optimized SQLite database (mexico_geo_catalog.db):
 python process_catalogs.py
 python build_database.py
----
+
 
 ##🚀 Running the API
+---
 Start the FastAPI development server using Uvicorn:
 
 uvicorn main:app --reload
@@ -81,9 +82,10 @@ uvicorn main:app --reload
 Once running, you can access:
 Interactive API Docs (Swagger UI): http://localhost:8000/docs
 Alternative Docs (ReDoc): http://localhost:8000/redoc
----
 
-##🐳 Running with Docker 
+
+🐳 Running with Docker 
+---
 You can easily build and run the service inside a Docker container:
 
 # Build the Docker image
@@ -92,6 +94,7 @@ docker build -t sepomex-inegi-api .
 # Run the container
 docker run -d -p 8000:8000 --name geo-api sepomex-inegi-api
 
-##📄 License
-Distributed under the terms of the License file included in this repository.
+📄 License
 ---
+Distributed under the terms of the License file included in this repository.
+
